@@ -15,7 +15,7 @@ Error: Aborting compilation due to previous errors
 emcc: error: '/Users/floh/projects/fips-sdks/emsdk/node/14.18.2_64bit/bin/node /Users/floh/projects/fips-sdks/emsdk/upstream/emscripten/src/compiler.js /var/folders/dz/g9ydwg8973z9nn5bvffcwf3h0000gn/T/tmpw8xafb_u.json' failed (returned 1)
 ```
 
-...now remove the any of ```-flto```, ```-O1``` or  ```-sMALLOC=emmalloc``` from the build script and run again, this should work.
+...now remove any of ```-flto```, ```-O1``` or  ```-sMALLOC=emmalloc``` from the build script and run again, this should work.
 
 It also works if malloc is invoked directly instead of through a function pointer in ```alloc.c```:
 
